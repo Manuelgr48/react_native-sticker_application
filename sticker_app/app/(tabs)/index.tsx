@@ -1,5 +1,5 @@
 
-import { Image } from 'expo-image';
+import ImageViewer from '@/components/ImageViewer';
 import { StyleSheet, Text, View } from 'react-native';
 
 const PlaceholderImage = require('@/assets/images/background-image.png');
@@ -8,7 +8,7 @@ const Index = () => (
     <View style={styles.container}>
       <Text style={styles.text}>Home screen</Text>
       <View style={styles.imageContainer}>
-        <Image source={PlaceholderImage} style={styles.image} />
+        <ImageViewer imgSource={PlaceholderImage} />r
       </View>
     </View>
     
